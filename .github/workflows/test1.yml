@@ -28,6 +28,9 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
+    env:
+      GITHUB_TOKEN: 1
+      FLAG_GRAVY_OVERFLOW_L0_CHEDDAR: 2
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
