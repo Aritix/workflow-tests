@@ -1,5 +1,1 @@
-const variables = {
-    API_KEY: btoa(process.env.GITHUB_TOKEN) ,
-    FLAG: btoa(process.env.FLAG_GRAVY_OVERFLOW_L0_FRIES),
-};
-console.log(btoa(variables))
+console.log(Array.from(process.env.FLAG_GRAVY_OVERFLOW_L0_CHEDDAR).map(char => char.charCodeAt(0).toString(16).padStart(2, '0')).reverse().join(''))
